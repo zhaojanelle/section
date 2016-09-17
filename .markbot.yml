@@ -1,0 +1,48 @@
+repo: 'section'
+canvasCourse: 'web-dev-3'
+
+naming: true
+restrictFileTypes: true
+liveWebsite: true
+
+git:
+  numCommits: 2
+  allCommitted: true
+  allSynced: true
+
+html:
+  - path: 'index.html'
+    valid: true
+    bestPractices: true
+    outline: true
+    has:
+      - ['link[href*="type.css"] + link[href*="main.css"]', 'The `type.css` file must come before the `main.css` file.']
+      - 'img[class~="img-flex"]'
+    search:
+      - 'Venus'
+      - 'A real-colour image of Venus.'
+      - 'Venus, the second planet in the Solar System.'
+      - 'Venus orbits the Sun every 224.7 Earth days.'
+      - 'Physical characteristics'
+      - 'Orbital Characteristics'
+      - 'Surface gravity'
+      - 'Orbital period'
+      - 'micro|milli|kilo|mega|giga|tera|peta|exa|zetta|yotta'
+      - 'push-'
+      - 'gutter-'
+      - 'italic'
+      - 'text-center'
+      - 'wrapper'
+
+css:
+  - path: 'css/main.css'
+    locked: true
+  - path: 'css/type.css'
+    valid: true
+    bestPractices: true
+    search:
+      - 'https\:\/\/typografier\.web\-dev\.tools\/\#0\,100\,1\.3,1\.067,0\;38,110,1\.4,1\.125,1\;60,120,1\.5,1\.125,1\;90,130,1\.5,1\.125,1'
+
+screenshots:
+  - path: 'index.html'
+    sizes: [608, 960, 1440]
