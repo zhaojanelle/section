@@ -31,8 +31,8 @@ html:
       - 'push-'
       - 'gutter-'
       - 'italic'
-      - 'text-center'
-      - 'wrapper'
+      - 'text-'
+      - 'wrapper|max-length'
 
 css:
   - path: 'css/main.css'
